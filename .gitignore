@@ -1,0 +1,8 @@
+*.png
+*.log
+*.html
+*.json
+*.idea
+*.gradle
+*.build
+*.allure-report

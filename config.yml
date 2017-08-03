@@ -1,0 +1,8 @@
+browser:
+# unused. Window is always maximized
+#  window:
+#    height: 1024
+#    width: 1280
+
+capybara:
+  default_max_wait_time: 30

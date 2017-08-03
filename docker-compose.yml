@@ -1,0 +1,22 @@
+seleniumhubcuc:
+  image: selenium/hub:2.53.1
+  container_name: selenium-hub-cucumber
+  ports:
+    - 4445:4444
+firefoxnodecuc:
+  image: selenium/node-firefox:2.53.1
+  ports:
+    - 5900
+  links:
+    - seleniumhubcuc:hub
+  volumes:
+    - /dev/shm:/dev/shm
+
+chromenodecuc:
+  image: selenium/node-chrome:2.53.1
+  ports:
+    - 5900
+  links:
+    - seleniumhubcuc:hub
+  volumes:
+    - /dev/shm:/dev/shm

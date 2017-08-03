@@ -1,0 +1,3 @@
+default: --format pretty -p json_report
+html_report: --format html --out report<%= ENV['TEST_ENV_NUMBER'] %>.html
+json_report: --format json --out report<%= ENV['TEST_ENV_NUMBER'] %>.json
